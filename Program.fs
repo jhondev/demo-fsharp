@@ -3,6 +3,8 @@
 
 [<EntryPoint>]
 let main argv =
-    printfn "Hello World from F#! edited"
+    let mutable im = "testing"
+    im <- "tesing edited"
+    printfn "Hello World from F#! edited %A" im
     printfn "%A %d" argv argv.Length
     0 // return an integer exit code

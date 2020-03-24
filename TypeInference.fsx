@@ -1,4 +1,4 @@
-module TypeInference
+open System
 
 let sayHello (someValue) =
     let innerFunction (number) =
