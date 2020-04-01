@@ -7,6 +7,7 @@
     <Compile Include="Formater.fsx" />
     <Compile Include="TypeInference.fsx" />
     <Compile Include="Types.fsx" />
+    <Compile Include="Hof.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
