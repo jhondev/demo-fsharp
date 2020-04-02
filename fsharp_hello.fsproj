@@ -8,6 +8,9 @@
     <Compile Include="TypeInference.fsx" />
     <Compile Include="Types.fsx" />
     <Compile Include="Hof.fsx" />
+    <Compile Include="Capstone2/Domain.fs" />
+    <Compile Include="Capstone2/Audit.fs" />
+    <Compile Include="Capstone2\Test.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
