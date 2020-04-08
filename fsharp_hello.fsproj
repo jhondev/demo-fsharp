@@ -11,8 +11,11 @@
     <Compile Include="Capstone2/Domain.fs" />
     <Compile Include="Capstone2/Audit.fs" />
     <Compile Include="Capstone2\Test.fsx" />
+    <Content Include="Collections\book.txt" />
     <Compile Include="Collections\Football.fsx" />
     <None Include="Collections\Folding.fsx" />
+    <None Include="Collections\Folding2.fsx" />
+    <None Include="Collections\Folding3Composition.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
