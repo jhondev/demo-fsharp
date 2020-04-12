@@ -8,9 +8,10 @@
     <Compile Include="TypeInference.fsx" />
     <Compile Include="Types.fsx" />
     <Compile Include="Hof.fsx" />
+    <None Include="DiscriminatedUnions.fsx" />
     <Compile Include="Capstone2/Domain.fs" />
     <Compile Include="Capstone2/Audit.fs" />
-    <Compile Include="Capstone2\Test.fsx" />
+    <None Include="Capstone2/Test.fsx" />
     <Content Include="Collections\book.txt" />
     <Compile Include="Collections\Football.fsx" />
     <None Include="Collections\Folding.fsx" />
