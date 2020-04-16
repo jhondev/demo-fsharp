@@ -9,6 +9,7 @@
     <Compile Include="Types.fsx" />
     <Compile Include="Hof.fsx" />
     <None Include="DiscriminatedUnions.fsx" />
+    <None Include="Option.fsx" />
     <Compile Include="Capstone2/Domain.fs" />
     <Compile Include="Capstone2/Audit.fs" />
     <None Include="Capstone2/Test.fsx" />
