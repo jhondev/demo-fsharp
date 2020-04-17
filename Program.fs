@@ -1,4 +1,4 @@
-﻿// Learn more about F# at http://fsharp.org
+﻿open NewtonsoftPackage
 
 let hello (argv: string []) =
     let mutable im = "testing"
@@ -8,5 +8,6 @@ let hello (argv: string []) =
 
 [<EntryPoint>]
 let main argv =
-    hello argv
+    // hello argv
+    NewtonsoftPackage.printPerson
     0 // return an integer exit code

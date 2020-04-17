@@ -4,20 +4,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Formater.fsx" />
-    <Compile Include="TypeInference.fsx" />
-    <Compile Include="Types.fsx" />
-    <Compile Include="Hof.fsx" />
+    <None Include="Formater.fsx" />
+    <None Include="TypeInference.fsx" />
+    <None Include="Types.fsx" />
+    <None Include="Hof.fsx" />
     <None Include="DiscriminatedUnions.fsx" />
     <None Include="Option.fsx" />
+    <None Include="OptionModule.fsx" />
     <Compile Include="Capstone2/Domain.fs" />
     <Compile Include="Capstone2/Audit.fs" />
     <None Include="Capstone2/Test.fsx" />
     <Content Include="Collections\book.txt" />
-    <Compile Include="Collections\Football.fsx" />
+    <None Include="Collections\Football.fsx" />
     <None Include="Collections\Folding.fsx" />
     <None Include="Collections\Folding2.fsx" />
     <None Include="Collections\Folding3Composition.fsx" />
+    <Compile Include="Packages\NewtonsoftPackage.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
