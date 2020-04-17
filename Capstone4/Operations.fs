@@ -15,11 +15,15 @@ let deposit amount account =
 /// Runs some account operation such as withdraw or deposit with auditing.
 let auditAs operationName audit operation amount account =
     let updatedAccount = operation amount account
-    
+
     let accountIsUnchanged = (updatedAccount = account)
 
     let transaction =
-        let transaction = { Operation = operationName; Amount = amount; Timestamp = DateTime.UtcNow; Accepted = true }
+        let transaction =
+            { Operation = operationName
+              Amount = amount
+              Timestamp = DateTime.UtcNow
+              Accepted = true }
         if accountIsUnchanged then { transaction with Accepted = false }
         else transaction
 
@@ -28,10 +32,13 @@ let auditAs operationName audit operation amount account =
 
 /// Creates an account from a historical set of transactions
 let loadAccount (owner, accountId, transactions) =
-    let openingAccount = { AccountId = accountId; Balance = 0M; Owner = { Name = owner } }
+    let openingAccount =
+        { AccountId = accountId
+          Balance = 0M
+          Owner = { Name = owner } }
 
     transactions
-    |> Seq.sortBy(fun txn -> txn.Timestamp)
-    |> Seq.fold(fun account txn ->
+    |> Seq.sortBy (fun txn -> txn.Timestamp)
+    |> Seq.fold (fun account txn ->
         if txn.Operation = "withdraw" then account |> withdraw txn.Amount
         else account |> deposit txn.Amount) openingAccount
