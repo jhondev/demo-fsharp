@@ -19,7 +19,14 @@
     <None Include="Collections\Folding.fsx" />
     <None Include="Collections\Folding2.fsx" />
     <None Include="Collections\Folding3Composition.fsx" />
-    <Compile Include="Packages\NewtonsoftPackage.fs" />
+    <Compile Include="NetPackages\NewtonsoftPackage.fs" />
+    <Compile Include="Capstone4\Domain.fs" />
+    <Compile Include="Capstone4\FileRepository.fs" />
+    <None Include="Capstone4\Listings.fsx" />
+    <Compile Include="Capstone4\Operations.fs" />
+    <Compile Include="Capstone4\Auditing.fs" />
+    <None Include="Capstone4\Scratchpad.fsx" />
+    <Compile Include="Capstone4\Program.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
