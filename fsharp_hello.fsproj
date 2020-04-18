@@ -5,13 +5,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Formater.fsx" />
-    <None Include="TypeInference.fsx" />
-    <None Include="Types.fsx" />
-    <None Include="Hof.fsx" />
-    <None Include="DiscriminatedUnions.fsx" />
-    <None Include="Option.fsx" />
-    <None Include="OptionModule.fsx" />
     <Compile Include="Capstone2/Domain.fs" />
     <Compile Include="Capstone2/Audit.fs" />
     <None Include="Capstone2/Test.fsx" />
@@ -28,6 +21,20 @@
     <None Include="Collections\Folding2.fsx" />
     <None Include="Collections\Folding3Composition.fsx" />
     <Compile Include="NetPackages\NewtonsoftPackage.fs" />
+    <None Include="TypeProviders\DataCSV.fsx" />
+    <None Include="TypeProviders\DataSql.fsx" />
+    <None Include="TypeProviders\DataSqlProvider.fsx" />
+    <Content Include="data\adventureworks-lt.dacpac" />
+    <Content Include="data\sample-package.html" />
+    <Content Include="data\FootballResults.csv" />
+    <Content Include="data\FootballResultsBad.csv" />
+    <None Include="Formater.fsx" />
+    <None Include="TypeInference.fsx" />
+    <None Include="Types.fsx" />
+    <None Include="Hof.fsx" />
+    <None Include="DiscriminatedUnions.fsx" />
+    <None Include="Option.fsx" />
+    <None Include="OptionModule.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
