@@ -28,6 +28,8 @@
     <Content Include="data\sample-package.html" />
     <Content Include="data\FootballResults.csv" />
     <Content Include="data\FootballResultsBad.csv" />
+    <Compile Include="UnitTests\Basic.fs" />
+    <Compile Include="UnitTests\BasicTests.fs" />
     <None Include="Formater.fsx" />
     <None Include="TypeInference.fsx" />
     <None Include="Types.fsx" />
@@ -36,6 +38,9 @@
     <None Include="Option.fsx" />
     <None Include="OptionModule.fsx" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xunit" Version="2.4.1" />
   </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
 </Project>

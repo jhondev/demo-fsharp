@@ -2,7 +2,7 @@
 #r @"../packages/FSharp.Data.Npgsql/lib/netstandard2.0/FSharp.Data.Npgsql.dll"
 
 let [<Literal>] Conn =
-    "Host=localhost;Database=fluidcerts;Username=postgres;Password=test"     
+    "Host=localhost;Port=5003;Database=fluidcerts;Username=postgres;Password=postgres"     
 
 type certsCmd = FSharp.Data.Npgsql.NpgsqlCommand<"SELECT id, name FROM certificates_templates", Conn>
 

@@ -1,6 +1,4 @@
-﻿open NewtonsoftPackage
-
-let hello (argv: string []) =
+﻿let hello (argv: string []) =
     let mutable im = "testing"
     im <- "testing edited"
     printfn "Hello World from F#! edited %A" im
